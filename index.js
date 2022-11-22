@@ -36,8 +36,9 @@ function writeCards(names) {
 writeCards(names);
 
 function countDown(num) {
-  for (let i = 0; i < num.length; i++) {
-    console.log(num);
+ let i = 0
+  while (i <= num) {
+    console.log(num--)
   }
-  return num;
 }
+countdown(10)
