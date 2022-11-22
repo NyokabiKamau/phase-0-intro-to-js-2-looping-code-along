@@ -1,38 +1,13 @@
-// Code your solutions in this file
-/*
-const gifts = ["teddy bear", "drone", "doll"];
 
-function wrapGifts(gifts) {
-  for (let i = 0; i < gifts.length; i++) {
-    console.log(`Wrapped ${gifts[i]} and added a bow!`);
-  }
+const names = [];
 
-  return gifts;
-}
-
-wrapGifts(gifts);
-
-
-Cards(["Guadalupe", "Ollie", "Aki"], "birthday");
-
-message = `Thank you, ${Cards[0][i]} for the wonderful ${Cards[1]}`;
-
-function writeCards(cards) {
-    for (let i = 0; i < cards.length; i++) {
-    return message;
-    }
-}
-writeCards(message);
-*/
-
-const names = ["Guadalupe", "Ollie", "Aki"];
-
-function writeCards(names) {
+function writeCards(names, event) {
     for (let i = 0; i < names.length; i++) {
-        console.log(`Thank you, ${names[i]} for the wonderful surprise gift!`)
+        names[i] = (`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
     }
     return names;
   }
+
 writeCards(names);
 
 function countDown(num) {
